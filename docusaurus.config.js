@@ -9,7 +9,7 @@ const config = {
   title: 'Flux Wiki',
   tagline: 'The Wiki for Flux MC Servers',
   url: 'https://wiki.fluxsmp.com',
-  baseUrl: '/Flux-Wiki/',
+  baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
