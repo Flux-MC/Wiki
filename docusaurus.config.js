@@ -29,23 +29,19 @@ const config = {
 
   presets: [
     [
-      'classic',
+      '@docusaurus/preset-classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          routeBasePath: '/',
+
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           // editUrl:
           //   'https://github.com/Flux-MC/Wiki/tree/main/node_modules/create-docusaurus/templates/shared/',
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          // editUrl:
-          //   'https://github.com/Flux-MC/Wiki/tree/main/node_modules/create-docusaurus/templates/shared/',
-        },
+        blog: false,
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -60,16 +56,16 @@ const config = {
         title: 'Flux MC Wiki',
         logo: {
           alt: 'Flux MC Logo',
-          src: 'img/logo.svg',
+          src: 'img/light-logo.svg',
+          srcDark: 'img/dark-logo.svg',
         },
         items: [
           {
             type: 'doc',
-            docId: 'intro',
+            docId: 'welcome',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Wiki',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/Flux-MC/Wiki',
             label: 'GitHub',
@@ -81,11 +77,15 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Wiki',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'Home',
+                to: '/Welcome',
+              },
+              {
+                label: 'FAQ',
+                to: '/faq',
               },
             ],
           },
@@ -109,10 +109,6 @@ const config = {
           {
             title: 'More',
             items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
               {
                 label: 'GitHub',
                 href: 'https://github.com/Flux-MC/Wiki',

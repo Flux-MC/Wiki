@@ -1,8 +1,8 @@
 # Flux MC Public Wiki
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+This is the public wiki for the Flux MC Minecraft server. It is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
-## Public Contributions
+## Contributers
 
 - [@PixelParallax](https://github.com/PixelParallax)
 
@@ -20,12 +20,6 @@ npm start
 
 This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
-### Build
+### Contributing
 
-```text
-npm run build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+To contribute to the wiki, please fork the repository and make a pull request. All wiki pages are located in the `docs` folder. If you have any questions or concerns, please contact Pixel#8020 on Discord.
