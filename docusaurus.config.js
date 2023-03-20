@@ -53,6 +53,7 @@ const config = {
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+    
     ({
       navbar: {
         title: 'Flux MC Wiki',
@@ -123,6 +124,26 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+      },
+      algolia: {
+        // The application ID provided by Algolia
+        appId: 'QTYKYLHKY5',
+  
+        // Public API key: it is safe to commit it
+        apiKey: '068cdb0328677165a7702a07647a838a',
+  
+        indexName: 'fluxsmp',
+  
+        // Optional: see doc section below
+        contextualSearch: true,
+  
+        // Optional: Algolia search parameters
+        searchParameters: {},
+  
+        // Optional: path for search page that enabled by default (`false` to disable it)
+        searchPagePath: 'search',
+  
+        //... other Algolia params
       },
     }),
 };
